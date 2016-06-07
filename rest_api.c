@@ -564,39 +564,14 @@ long * get_observations(char* account_name, char* device_id, char* device2_id, c
 	}
 	if (display == 1)
 	{
-		int lower = atoi(value);
-		int mid = atoi(value2);
-		int upper = atoi(value3);
-		int emg = atoi(value4);
-		int ecg = atoi(value5);
-		ecg = 0;
-		printf("Lower: %d, Mid: %d, Upper: %d, EMG: %d, ECG: %d\n", lower, mid, upper, emg, ecg);
-		if (lower == mid && mid == upper && upper == emg && emg == 0 && ecg == 0)
-			printf ("All sensors reporting ideal status.\n");
-		if (lower == 1)
-			printf ("Lower 9DOF has minor difference from ideal posture.\n");
-		else if (lower == 2)
-			printf ("Lower 9DOF has major difference from ideal posture.\n");
-		if (mid == 1)
-			printf ("Mid 9DOF has minor difference from ideal posture.\n");
-		else if (mid == 2)
-			printf ("Mid 9DOF has major difference from ideal posture.\n");
-		if (upper == 1)
-			printf ("Upper 9DOF has minor difference from ideal posture.\n");
-		else if (upper == 2)
-			printf ("Upper 9DOF has minor difference from ideal posture.\n");
-		if (ecg == 1)
-			printf ("Heart rate is too low.\n");
-		else if (ecg == 2)
-			printf ("Heart rate is too high.\n");
-		if (emg == 1)
-			printf ("EMG detects moderate stress on both sides.\n");
-		if (emg == 2)
-			printf ("High stress on right side.\n");
-		if (emg == 3)
-			printf ("High stress on left side.\n");
-		if (emg == 4)
-			printf ("High stress on both sides.\n");
+		int value1 = atoi(value);
+		int value2 = atoi(value2);
+		int value3 = atoi(value3);
+		int value4 = atoi(value4);
+		int value5 = atoi(value5);
+
+		printf("Value1: %d, Value2: %d, Value3: %d, Value4: %d, Value5: %d\n", value1, value2, value3, value4, value5);
+
 	}
 	pclose(output);
 	
