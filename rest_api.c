@@ -564,13 +564,13 @@ long * get_observations(char* account_name, char* device_id, char* device2_id, c
 	}
 	if (display == 1)
 	{
-		int value1 = atoi(value);
-		int value2 = atoi(value2);
-		int value3 = atoi(value3);
-		int value4 = atoi(value4);
-		int value5 = atoi(value5);
+		int data1 = atoi(value);
+		int data2 = atoi(value2);
+		int data3 = atoi(value3);
+		int data4 = atoi(value4);
+		int data5 = atoi(value5);
 
-		printf("Value1: %d, Value2: %d, Value3: %d, Value4: %d, Value5: %d\n", value1, value2, value3, value4, value5);
+		printf("Value1: %d, Value2: %d, Value3: %d, Value4: %d, Value5: %d\n", data1, data2, data3, data4, data5);
 
 	}
 	pclose(output);

@@ -44,7 +44,7 @@ int main()
 	int classification = 0;
 
 	printf("\n\n==========================================================\n");
-	printf("============= Posture Monitoring Data Retrieval ==============\n");
+	printf("=========== Posture Monitoring Data Retrieval ============\n");
 	printf("==========================================================\n\n");
 
 	display_flag = 0; //do not show the output
